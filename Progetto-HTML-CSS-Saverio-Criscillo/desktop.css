@@ -1,0 +1,501 @@
+/*-----------------------------------------------------------------------------
+Stili base
+-----------------------------------------------------------------------------*/
+
+/* modifica i vari font e grandezze stilizzandoli con classi*/
+body {
+    height: 1078px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0, 0.9)), 
+    url(../Progetto-HTML-CSS-Saverio-Criscillo/img/img-sfondo-1.jpg) no-repeat center center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+a {text-decoration: none;}
+h1, h2, h3, h4, h5, p {color: #b0bec5; padding-bottom: 30px;}
+
+
+
+/*-----------------------------------------------------------------------------
+Header
+-----------------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    height: 120px;
+    width: 160px;
+    background: url(../Progetto-HTML-CSS-Saverio-Criscillo/img/logo-SC.png)
+    no-repeat center center;
+    background-size: cover;
+}
+
+.name {
+    margin-top: 1vh;
+}
+
+.name h5 {
+    font-size: 20px;
+}
+
+.nav-links {
+    width: 50%;
+}
+
+.nav-links a{
+   list-style-type: none;
+   padding: 10px;
+   color: seashell;
+   font-size: 20px;
+}
+
+a:hover {
+    color: black;
+}
+
+li:hover {
+    background-color: gray;
+}
+
+.nav-links  li{
+    border: 1px solid grey;
+    border-radius: 3px;
+    display: flex; 
+    margin-left: 7%;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    
+    padding-top: 70px;
+    margin-left: 10%;
+}
+/*Menu a comparsa per mobile*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #b0bec5;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+Presentazione Pagina home
+-----------------------------------------------------------------------------*/
+
+.presentazione {
+   
+    height: 700px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.presentazione__text {
+    width: 50%;
+    max-width: 100%;
+    margin: 0 5%;
+    margin-top: -50px;
+    
+}
+
+.presentazione__text h1, p {
+    
+    width: 200px;
+    color: seashell;
+    font-size: 20px;
+}
+
+
+
+.presentazione__img img {
+    width: 45%;
+    height: 30%;
+    border-radius: 50%;
+    margin-top: -50px;
+    
+    
+}
+
+/*-----------------------------------------------------------------------------
+      Pagina About
+-----------------------------------------------------------------------------*/
+
+.about-content {
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 180px;
+    background-color: rgba(128, 128, 128, 0.427);
+}
+
+.about-content h1 {
+    font-size: 20px;
+    
+}
+
+.su-di-me {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 50vw;
+    border-right: 1px solid black;
+}
+
+.su-di-me h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.su-di-me p {
+    margin-top: -15px;
+    text-align: center;
+    width: 90%;
+}
+
+.percorso {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 50vw;
+    border-right: 1px solid black;
+}
+
+.percorso h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.percorso p {
+    margin-top: -15px;
+    text-align: center;
+    width: 90%;
+}
+
+.mission {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 50vw;
+    
+}
+
+.mission h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mission p {
+    margin-top: -15px;
+    text-align: center;
+    width: 90%;
+}
+
+.mission a {
+    list-style-type: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.023);
+}
+
+.mission a:hover {
+    background-color: black;
+    color: white;
+}
+/*-----------------------------------------------------------------------------
+    skills pagina About
+-----------------------------------------------------------------------------*/
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+#skills-container h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.progress-container-1 {
+    margin-left: 70px;
+    width: 90%;
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.progress-skill-1 {
+    height: 48px;
+    width: 90%;
+    background-color: grey;
+}
+
+.progress-skill-1 p {
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+
+.progress-container-2 {
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 90%;
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.progress-skill-2 {
+    height: 48px;
+    width: 60%;
+    background-color: grey;
+}
+
+.progress-skill-2 p {
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+/*-----------------------------------------------------------------------------
+    Pagina Work
+-----------------------------------------------------------------------------*/
+
+.container-work-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    width:100%;
+    height:400px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.work-1 {
+    width: 50%;
+}
+
+.work-1 img {
+    width: 100%;
+    height: 400px;
+}
+
+.text-work-1 {
+    font-size: 20px;
+    padding-top: 50px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.399);
+}
+
+
+/*-----------------------------------------------------------------------------
+    Pagina contact
+-----------------------------------------------------------------------------*/
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.386);
+}
+
+
+
+
+
+
+#form{
+    
+    border: 1px solid #D3D3D3;
+    background: none repeat scroll 0 0 #0a0a0a3f;
+    border-radius:8px;    
+    margin: 80px auto;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+#form h2{        
+    border-bottom: 1px solid #CCCCCC;
+    color: #b0bec5;
+    font: 24px Monotype Corsiva,Arial;
+    margin: 10px 26px;
+    padding: 0 5px 10px 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+#form fieldset{
+    margin:0;
+    padding:0;
+    border:none;        
+    display:inline;
+    margin-left:26px;
+}  
+#form label{
+    display:block;
+    color:seashell;
+    margin-bottom:1px;
+}     
+#form input, #form textarea{
+    font:13px 'Poppins', Sans-Serif;
+    color: seashell;
+    border: none;
+    border-radius:5px;         
+    background-color: #F7F7F7;
+    padding:3px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    color: #5B5B5B;
+}
+#form input {
+    width:224px;
+}
+#form input:focus, #form textarea:focus {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #F2F2F2;
+    color: #333;
+}
+#form textarea{
+    width:286px;
+    height:120px;
+    overflow:auto;
+}                                     
+#form .submit{
+    clear:both;
+    padding: 0px 25px 20px;
+    margin:0;
+    float:right;
+}
+
+#form button{
+    width:120px;
+    line-height:28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border: solid 1px #2e3537ad;
+    border-radius: 5px;
+    background-color: #4a5459f9;    
+    background-image:linear-gradient(center top , #282f328c, #303a3e);
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+}
+
+#form button:hover {
+    border: 1px solid;
+    border-color: black;
+    box-shadow: none;
+}
+
+#form button:active {
+    background-image:linear-gradient(#506368, #1d2122); 
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+
+
+
+/*------------------------------------------------------
+Media query Desktop
+--------------------------------------------------------*/
+@media screen and (max-width: 990px) {
+    .nav-links {
+        
+        margin-left: -1%;
+        
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .nav-links {
+        
+        margin-left: -20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
